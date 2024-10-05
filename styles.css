@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #e50914;
+    --secondary-color: #333;
+    --text-color: #fff;
+    --background-color: #141414;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions select, .user-actions a {
+    margin-left: 10px;
+}
+
+#language-select {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+main {
+    padding: 20px;
+}
+
+.movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .user-actions {
+        margin-top: 10px;
+    }
+}

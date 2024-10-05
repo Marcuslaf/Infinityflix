@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinityflix</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="Imagens/infinityschool_logo.jpeg" alt="Logo da Infinityflix" class="logo">
+                <h1>Infinityflix</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#series">Séries</a></li>
+                    <li><a href="#filmes">Filmes</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <select id="language-select" aria-label="Selecionar idioma">
+                    <option value="pt-BR">Português</option>
+                    <option value="en-US">English</option>
+                    <option value="es-ES">Español</option>
+                </select>
+                <a href="#cadastro" class="btn btn-secondary">Cadastrar-se</a>
+                <a href="#login" class="btn btn-primary">Entrar</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="movie-list" class="movies"></section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Infinityflix. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
